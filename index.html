@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+      .pointer { cursor: pointer; }
+      .bottom-card-img { width: 100%; height: auto; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center py-3">
+          <div class="d-flex flex-column flex-md-row align-items-center gap-3 gap-md-4 mb-3 mb-md-0">
+            <a href="#">
+              <img src="images/icons/logo-icon.png" alt="logo">
+            </a>
+            <div class="d-flex flex-wrap justify-content-center gap-2 gap-md-3">
+              <a href="#!" class="text-dark text-decoration-none">Истории</a>
+              <a href="#!" class="text-dark text-decoration-none">Авторы</a>
+              <a href="#!" class="text-dark text-decoration-none">Каталог</a>
+            </div>
+          </div>
+          <button class="bg-info p-2 rounded bg-gradient text-dark border-0" type="button" data-bs-toggle="modal" data-bs-target="#authModal">Войти</button>
+          
+          <!-- Auth Modal -->
+          <div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5 fw-bold text-primary text-center w-100" id="authModalLabel">Авторизация</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="mb-3">
+                    <label for="emailInput" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="emailInput">
+                  </div>
+                  <div class="mb-3">
+                    <label for="passwordInput" class="form-label">Пароль</label>
+                    <input type="password" class="form-control" id="passwordInput">
+                  </div>
+                  <button class="bg-info p-2 rounded bg-gradient text-dark border-0 w-100" type="button" data-bs-dismiss="modal" aria-label="Close">
+                    Войти
+                  </button>
+                  <a href="#!" class="w-100 text-center d-block mt-4">Забыли пароль?</a>
+                </div>
+                <div class="modal-footer border-0">
+                  <p class="text-center w-100">Ещё нет аккаунта?</p>
+                  <button class="bg-info p-2 rounded bg-gradient text-dark border-0 w-100">
+                    Зарегистрироваться
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="mt-3 mt-md-5"> 
+      <!-- Popular Stories Section -->
+      <section>
+        <div class="container">
+          <h2 class="text-primary fs-5">Популярные истории</h2>
+          <div class="row mt-3 mt-md-4 g-4">
+            <!-- Card 1 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card border-0 pointer" data-bs-toggle="modal" data-bs-target="#cardModal">
+                <img src="images/card-img.png" alt="card-img" class="rounded-2 w-100">
+                <h3 class="card-title fs-5 text-primary mt-1 mb-2">Призыв дракона</h3>
+                <h4 class="card-text fs-6 text-dark mb-2">Лара Арт</h4>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge bg-primary">Фэнтэзи</span>
+                  <span class="badge bg-primary">Тег</span>
+                  <span class="badge bg-primary">Тег</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card border-0 pointer" data-bs-toggle="modal" data-bs-target="#cardModal">
+                <img src="images/card-img.png" alt="card-img" class="rounded-2 w-100">
+                <h3 class="card-title fs-5 text-primary mt-1 mb-2">Призыв дракона</h3>
+                <h4 class="card-text fs-6 text-dark mb-2">Лара Арт</h4>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge bg-primary">Фэнтэзи</span>
+                  <span class="badge bg-primary">Тег</span>
+                  <span class="badge bg-primary">Тег</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card border-0 pointer" data-bs-toggle="modal" data-bs-target="#cardModal">
+                <img src="images/card-img.png" alt="card-img" class="rounded-2 w-100">
+                <h3 class="card-title fs-5 text-primary mt-1 mb-2">Призыв дракона</h3>
+                <h4 class="card-text fs-6 text-dark mb-2">Лара Арт</h4>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge bg-primary">Фэнтэзи</span>
+                  <span class="badge bg-primary">Тег</span>
+                  <span class="badge bg-primary">Тег</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Card 4 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card border-0 pointer" data-bs-toggle="modal" data-bs-target="#cardModal">
+                <img src="images/card-img.png" alt="card-img" class="rounded-2 w-100">
+                <h3 class="card-title fs-5 text-primary mt-1 mb-2">Призыв дракона</h3>
+                <h4 class="card-text fs-6 text-dark mb-2">Лара Арт</h4>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge bg-primary">Фэнтэзи</span>
+                  <span class="badge bg-primary">Тег</span>
+                  <span class="badge bg-primary">Тег</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Promoted Stories Section -->
+      <section class="bg-primary-subtle mt-4 mt-md-5 pt-4 pb-4">
+        <div class="container">
+          <h2 class="text-dark fs-5">Продвигаемые истории</h2>
+          <div class="row mt-3 mt-md-4 g-4">
+            <!-- Card 1 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card border-0 pointer bg-transparent" data-bs-toggle="modal" data-bs-target="#cardModal">
+                <img src="images/card-img.png" alt="card-img" class="rounded-2 w-100">
+                <h3 class="card-title fs-5 text-primary mt-1 mb-2">Призыв дракона</h3>
+                <h4 class="card-text fs-6 text-dark mb-2">Лара Арт</h4>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge bg-primary">Фэнтэзи</span>
+                  <span class="badge bg-primary">Тег</span>
+                  <span class="badge bg-primary">Тег</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card border-0 pointer bg-transparent" data-bs-toggle="modal" data-bs-target="#cardModal">
+                <img src="images/card-img.png" alt="card-img" class="rounded-2 w-100">
+                <h3 class="card-title fs-5 text-primary mt-1 mb-2">Призыв дракона</h3>
+                <h4 class="card-text fs-6 text-dark mb-2">Лара Арт</h4>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge bg-primary">Фэнтэзи</span>
+                  <span class="badge bg-primary">Тег</span>
+                  <span class="badge bg-primary">Тег</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card border-0 pointer bg-transparent" data-bs-toggle="modal" data-bs-target="#cardModal">
+                <img src="images/card-img.png" alt="card-img" class="rounded-2 w-100">
+                <h3 class="card-title fs-5 text-primary mt-1 mb-2">Призыв дракона</h3>
+                <h4 class="card-text fs-6 text-dark mb-2">Лара Арт</h4>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge bg-primary">Фэнтэзи</span>
+                  <span class="badge bg-primary">Тег</span>
+                  <span class="badge bg-primary">Тег</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Card 4 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card border-0 pointer bg-transparent" data-bs-toggle="modal" data-bs-target="#cardModal">
+                <img src="images/card-img.png" alt="card-img" class="rounded-2 w-100">
+                <h3 class="card-title fs-5 text-primary mt-1 mb-2">Призыв дракона</h3>
+                <h4 class="card-text fs-6 text-dark mb-2">Лара Арт</h4>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge bg-primary">Фэнтэзи</span>
+                  <span class="badge bg-primary">Тег</span>
+                  <span class="badge bg-primary">Тег</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Card 5 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card border-0 pointer bg-transparent" data-bs-toggle="modal" data-bs-target="#cardModal">
+                <img src="images/card-img.png" alt="card-img" class="rounded-2 w-100">
+                <h3 class="card-title fs-5 text-primary mt-1 mb-2">Призыв дракона</h3>
+                <h4 class="card-text fs-6 text-dark mb-2">Лара Арт</h4>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge bg-primary">Фэнтэзи</span>
+                  <span class="badge bg-primary">Тег</span>
+                  <span class="badge bg-primary">Тег</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Card 6 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card border-0 pointer bg-transparent" data-bs-toggle="modal" data-bs-target="#cardModal">
+                <img src="images/card-img.png" alt="card-img" class="rounded-2 w-100">
+                <h3 class="card-title fs-5 text-primary mt-1 mb-2">Призыв дракона</h3>
+                <h4 class="card-text fs-6 text-dark mb-2">Лара Арт</h4>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge bg-primary">Фэнтэзи</span>
+                  <span class="badge bg-primary">Тег</span>
+                  <span class="badge bg-primary">Тег</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Card 7 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card border-0 pointer bg-transparent" data-bs-toggle="modal" data-bs-target="#cardModal">
+                <img src="images/card-img.png" alt="card-img" class="rounded-2 w-100">
+                <h3 class="card-title fs-5 text-primary mt-1 mb-2">Призыв дракона</h3>
+                <h4 class="card-text fs-6 text-dark mb-2">Лара Арт</h4>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge bg-primary">Фэнтэзи</span>
+                  <span class="badge bg-primary">Тег</span>
+                  <span class="badge bg-primary">Тег</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Card 8 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card border-0 pointer bg-transparent" data-bs-toggle="modal" data-bs-target="#cardModal">
+                <img src="images/card-img.png" alt="card-img" class="rounded-2 w-100">
+                <h3 class="card-title fs-5 text-primary mt-1 mb-2">Призыв дракона</h3>
+                <h4 class="card-text fs-6 text-dark mb-2">Лара Арт</h4>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge bg-primary">Фэнтэзи</span>
+                  <span class="badge bg-primary">Тег</span>
+                  <span class="badge bg-primary">Тег</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Another Popular Stories Section -->
+      <section class="mt-4 mt-md-5">
+        <div class="container">
+          <h2 class="text-primary fs-5">Популярные истории</h2>
+          <div class="row mt-3 mt-md-4 g-4">
+            <!-- Card 1 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card border-0 pointer" data-bs-toggle="modal" data-bs-target="#cardModal">
+                <img src="images/card-img.png" alt="card-img" class="rounded-2 w-100">
+                <h3 class="card-title fs-5 text-primary mt-1 mb-2">Призыв дракона</h3>
+                <h4 class="card-text fs-6 text-dark mb-2">Лара Арт</h4>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge bg-primary">Фэнтэзи</span>
+                  <span class="badge bg-primary">Тег</span>
+                  <span class="badge bg-primary">Тег</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card border-0 pointer" data-bs-toggle="modal" data-bs-target="#cardModal">
+                <img src="images/card-img.png" alt="card-img" class="rounded-2 w-100">
+                <h3 class="card-title fs-5 text-primary mt-1 mb-2">Призыв дракона</h3>
+                <h4 class="card-text fs-6 text-dark mb-2">Лара Арт</h4>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge bg-primary">Фэнтэзи</span>
+                  <span class="badge bg-primary">Тег</span>
+                  <span class="badge bg-primary">Тег</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card border-0 pointer" data-bs-toggle="modal" data-bs-target="#cardModal">
+                <img src="images/card-img.png" alt="card-img" class="rounded-2 w-100">
+                <h3 class="card-title fs-5 text-primary mt-1 mb-2">Призыв дракона</h3>
+                <h4 class="card-text fs-6 text-dark mb-2">Лара Арт</h4>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge bg-primary">Фэнтэзи</span>
+                  <span class="badge bg-primary">Тег</span>
+                  <span class="badge bg-primary">Тег</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Card 4 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card border-0 pointer" data-bs-toggle="modal" data-bs-target="#cardModal">
+                <img src="images/card-img.png" alt="card-img" class="rounded-2 w-100">
+                <h3 class="card-title fs-5 text-primary mt-1 mb-2">Призыв дракона</h3>
+                <h4 class="card-text fs-6 text-dark mb-2">Лара Арт</h4>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge bg-primary">Фэнтэзи</span>
+                  <span class="badge bg-primary">Тег</span>
+                  <span class="badge bg-primary">Тег</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Genres Section -->
+      <section class="mt-4 mt-md-5">
+        <div class="container">
+          <h3 class="text-center text-dark fs-4">Жанры</h3>
+          <div class="d-flex flex-wrap justify-content-center gap-3 gap-md-4 mt-3">
+            <a class="text-decoration-none text-dark" href="#!">
+              <img src="images/icons/detektiv-icon.svg" alt="detektiv-icon"> Детектив
+            </a>
+            <a class="text-decoration-none text-dark" href="#!">
+              <img src="images/icons/dramma-icon.svg" alt="dramma-icon"> Драма
+            </a>
+            <a class="text-decoration-none text-dark" href="#!">
+              <img src="images/icons/love-icon.svg" alt="love-icon"> Любовный роман
+            </a>
+            <a class="text-decoration-none text-dark" href="#!">
+              <img src="images/icons/melodrama-icon.svg" alt="melodrama-icon"> Мелодрама
+            </a>
+            <a class="text-decoration-none text-dark" href="#!">
+              <img src="images/icons/mistyq-icon.svg" alt="mistyq-icon"> Мистика
+            </a>
+            <a class="text-decoration-none text-dark" href="#!">
+              <img src="images/icons/teenagers-icon.svg" alt="teenagers-icon"> Подростки
+            </a>
+            <a class="text-decoration-none text-dark" href="#!">
+              <img src="images/icons/postapokalipsis-icon.svg" alt="postapokalipsis-icon"> Постапокалипсис
+            </a>
+            <a class="text-decoration-none text-dark" href="#!">
+              <img src="images/icons/adventure-icon.svg" alt="detektiv-icon"> Приключение
+            </a>
+            <a class="text-decoration-none text-dark" href="#!">
+              <img src="images/icons/skazka-icon.svg" alt="detektiv-icon"> Сказка
+            </a>
+            <a class="text-decoration-none text-dark" href="#!">
+              <img src="images/icons/fantastic-icon.svg" alt="detektiv-icon"> Фантастика
+            </a>
+            <a class="text-decoration-none text-dark" href="#!">
+              <img src="images/icons/fanfik-icon.svg" alt="detektiv-icon"> Фанфик
+            </a>
+            <a class="text-decoration-none text-dark" href="#!">
+              <img src="images/icons/fentezi-icon.svg" alt="detektiv-icon"> Фэнтэзи
+            </a>
+            <a class="text-decoration-none text-dark" href="#!">
+              <img src="images/icons/horror-icon.svg" alt="detektiv-icon"> Хоррор
+            </a>
+            <a class="text-decoration-none text-dark" href="#!">
+              <img src="images/icons/erotika-icon.svg" alt="detektiv-icon"> Эротика
+            </a>
+            <a class="text-decoration-none text-dark" href="#!">
+              <img src="images/icons/humor-icon.svg" alt="detektiv-icon"> Юмор
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- News Section -->
+      <section class="mt-4 mt-md-5">
+        <div class="container">
+          <h2 class="text-primary fs-5 mb-3 mb-md-5">Новости</h2>
+          <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div>
+                <img class="bottom-card-img rounded-4" src="images/card-img.png" alt="card-image">
+                <span class="d-block fs-6 text-secondary mt-2">18.05.2023</span>
+                <h3 class="text-primary fs-5 mt-2">Персонажу «Вася» добавлен костюм единорога</h3>
+                <button class="bg-info p-2 rounded bg-gradient text-dark border-0 w-100 w-md-50 mt-3" type="button">
+                  Читать
+                </button>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div>
+                <img class="bottom-card-img rounded-4" src="images/card-img.png" alt="card-image">
+                <span class="d-block fs-6 text-secondary mt-2">18.05.2023</span>
+                <h3 class="text-primary fs-5 mt-2">Персонажу «Вася» добавлен костюм единорога</h3>
+                <button class="bg-info p-2 rounded bg-gradient text-dark border-0 w-100 w-md-50 mt-3" type="button">
+                  Читать
+                </button>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div>
+                <img class="bottom-card-img rounded-4" src="images/card-img.png" alt="card-image">
+                <span class="d-block fs-6 text-secondary mt-2">18.05.2023</span>
+                <h3 class="text-primary fs-5 mt-2">Персонажу «Вася» добавлен костюм единорога</h3>
+                <button class="bg-info p-2 rounded bg-gradient text-dark border-0 w-100 w-md-50 mt-3" type="button">
+                  Читать
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="mt-4 mt-md-5 pt-4 pb-4">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-2">
+            <a href="#!">
+              <img src="images/icons/logo-icon.png" alt="logo">
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-2">
+            <h4 class="text-secondary fs-5">Пользователю</h4>
+            <a class="text-dark text-decoration-none d-block mt-2" href="#!">Правила проекта</a>
+            <a class="text-dark text-decoration-none d-block mt-2" href="#!">Личный кабинет</a>
+            <a class="text-dark text-decoration-none d-block mt-2" href="#!">Новости</a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <h4 class="text-secondary fs-5">Информация</h4>
+            <a class="text-dark text-decoration-none d-block mt-2" href="#!">Конфиденциальность</a>
+            <a class="text-dark text-decoration-none d-block mt-2" href="#!">Пользовательское соглашение</a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <h4 class="text-secondary fs-5">Обратная связь</h4>
+            <a class="text-dark text-decoration-none d-block mt-2" href="#!">Написать в поддержку</a>
+            <span class="text-dark d-block mt-2">По поводу рекламы и сотрудничества пишите на <a href="mailto:info@click-story.ru">info@click-story.ru</a></span>
+          </div>
+        </div>
+        
+        <div class="row mt-4 mt-md-5 align-items-center">
+          <div class="col-12 col-md-6 mb-3 mb-md-0">
+            <div class="d-flex flex-column flex-md-row gap-3 gap-md-4">
+              <span class="text-secondary">© 2023 Click Story<br>Все права защищены</span>
+              <span>Дизайн<br><a href="#!" class="text-decoration-none">Таня Хайден</a></span>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="d-flex justify-content-start justify-content-md-end gap-2">
+              <img src="images/icons/MIR-logo.svg" alt="MIR">
+              <img src="images/icons/VISA-logo.svg" alt="VISA">
+              <img src="images/icons/MASTERCARD-logo.svg" alt="Mastercard">
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Card Modal -->
+    <div class="modal fade" id="cardModal" tabindex="-1" aria-labelledby="cardModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header d-block">
+            <h4 class="text-primary d-block">Призыв дракона</h4>
+            <span class="d-flex align-items-center gap-2 fs-5">Лара Арт <img src="images/icons/trpohy-icon.svg" alt="trophy">25</span>
+          </div>
+          <div class="modal-body">
+            <p class="fs-6 text-secondary">Есть над чем задуматься: предприниматели в сети интернет, инициированные исключительно синтетически, своевременно верифицированы. Безусловно, синтетическое тестирование говорит о возможностях экономической целесообразности принимаемых решений.</p>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge bg-primary">Фэнтэзи</span>
+              <span class="badge bg-primary">Тег</span>
+              <span class="badge bg-primary">Тег</span>
+            </div>
+          </div>
+          <div class="modal-footer border-0 d-flex flex-wrap justify-content-start gap-3">
+            <button class="border-0 bg-transparent d-flex align-items-center gap-2">
+              <img src="images/icons/heart-icon.svg" alt="likes"> 10
+            </button>
+            <button class="border-0 bg-transparent d-flex align-items-center gap-2">
+              <img src="images/icons/commeent-icon.svg" alt="comments"> 10
+            </button>
+            <button class="border-0 bg-transparent d-flex align-items-center gap-2">
+              <img src="images/icons/favourite-icon.svg" alt="favorites"> 10
+            </button>
+            <button class="border-0 bg-transparent d-flex align-items-center gap-2">
+              <img src="images/icons/eye-icon.svg" alt="views"> 10
+            </button>
+            <button class="border-0 bg-transparent d-flex align-items-center gap-2">
+              <img src="images/icons/hour-icon.svg" alt="time"> 10
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+</html>
