@@ -46,18 +46,88 @@
                   <button class="bg-info p-2 rounded bg-gradient text-dark border-0 w-100" type="button" data-bs-dismiss="modal" aria-label="Close">
                     Войти
                   </button>
-                  <a href="#!" class="w-100 text-center d-block mt-4">Забыли пароль?</a>
+                  <button href="#!" class="w-100 border-0 bg-transparent text-primary-emphasis text-decoration-underline text-center d-block mt-4" type="button" data-bs-toggle="modal" data-bs-target="#changepassModal">Забыли пароль?</button>
                 </div>
                 <div class="modal-footer border-0">
                   <p class="text-center w-100">Ещё нет аккаунта?</p>
-                  <button class="bg-info p-2 rounded bg-gradient text-dark border-0 w-100">
+                  <button class="bg-info p-2 rounded bg-gradient text-dark border-0 w-100" data-bs-toggle="modal" data-bs-target="#registerModal" type="button">
                     Зарегистрироваться
                   </button>
                 </div>
               </div>
             </div>
           </div>
+          <!-- Register Modal -->
+          <div class="modal fade " id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content register-modal w-100">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5 fw-bold w-100 fs-5 lh-1 text-primary text-center" id="registerModalLabel">Регистрация</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body row w-100">
+                <div class="col-6">
+                    <div class="mb-3">
+                    <label for="username" class="form-label">Псевдоним</label>
+                    <input type="email" class="form-control" id="emailInput">
+                    </div>
+                    <div class="mb-3">
+                    <label for="emailInput" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="emailInput">
+                    </div>
+                    <div class="mb-3">
+                        <label for="emailInput" class="form-label">Пароль</label>
+                        <input type="password" class="form-control" id="emailInput">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="mb-3">
+                    <label for="username" class="form-label">Имя</label>
+                    <input type="email" class="form-control" id="emailInput">
+                    </div>
+                    <div class="mb-3">
+                    <label for="emailInput" class="form-label">Фамилия</label>
+                    <input type="email" class="form-control" id="emailInput">
+                    </div>
+                    <div class="mb-3">
+                        <label for="emailInput" class="form-label">Промо-код</label>
+                        <input type="password" class="form-control" id="emailInput">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer border-0">
+                <p class="text-center w-100 fs-5">* Поля, обязательные для заполнения.</p>
+                <button class="bg-info p-2 rounded bg-gradient text-dark 1h-base border-0 w-100 mb-4 mb-4" type="button" data-bs-dismiss="modal" aria-label="Close">
+                Зарегистрироваться
+                </button>                
+            </div>
+            </div>
         </div>
+        </div>
+        <!-- changepassModal -->
+                             <div class="modal fade" id="changepassModal" tabindex="-1" aria-labelledby="changepassModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5 fw-bold fs-5 lh-1 text-primary text-center w-100" id="changepassModalLabel">Авторизация</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="mb-3">
+                                <label for="emailInput" class="form-label">Пароль</label>
+                                <input type="password" class="form-control" id="emailInput">
+                            </div>
+                            <div class="mb-3">
+                                <label for="emailInput" class="form-label">Подтверждение пароля</label>
+                                <input type="password" class="form-control" id="emailInput">
+                            </div>
+                            <button class="bg-info p-2 rounded bg-gradient text-dark 1h-base border-0 w-100" type="button" data-bs-dismiss="modal" aria-label="Close">
+                              Сменить пароль
+                            </button>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
       </div>
     </header>
 
@@ -405,48 +475,48 @@
     </main>
 
     <footer class="mt-4 mt-md-5 pt-4 pb-4">
-      <div class="container">
-        <div class="row g-4">
-          <div class="col-12 col-md-6 col-lg-2">
-            <a href="#!">
-              <img src="images/icons/logo-icon.png" alt="logo">
-            </a>
-          </div>
-          <div class="col-12 col-md-6 col-lg-2">
-            <h4 class="text-secondary fs-5">Пользователю</h4>
-            <a class="text-dark text-decoration-none d-block mt-2" href="#!">Правила проекта</a>
-            <a class="text-dark text-decoration-none d-block mt-2" href="#!">Личный кабинет</a>
-            <a class="text-dark text-decoration-none d-block mt-2" href="#!">Новости</a>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3">
-            <h4 class="text-secondary fs-5">Информация</h4>
-            <a class="text-dark text-decoration-none d-block mt-2" href="#!">Конфиденциальность</a>
-            <a class="text-dark text-decoration-none d-block mt-2" href="#!">Пользовательское соглашение</a>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3">
-            <h4 class="text-secondary fs-5">Обратная связь</h4>
-            <a class="text-dark text-decoration-none d-block mt-2" href="#!">Написать в поддержку</a>
-            <span class="text-dark d-block mt-2">По поводу рекламы и сотрудничества пишите на <a href="mailto:info@click-story.ru">info@click-story.ru</a></span>
-          </div>
-        </div>
-        
-        <div class="row mt-4 mt-md-5 align-items-center">
-          <div class="col-12 col-md-6 mb-3 mb-md-0">
-            <div class="d-flex flex-column flex-md-row gap-3 gap-md-4">
-              <span class="text-secondary">© 2023 Click Story<br>Все права защищены</span>
-              <span>Дизайн<br><a href="#!" class="text-decoration-none">Таня Хайден</a></span>
+          <div class="container">
+            <div class="row g-4">
+              <div class="col-12 col-md-6 col-lg-2">
+                <a href="#!">
+                  <img src="images/icons/logo-icon.png" alt="logo">
+                </a>
+              </div>
+              <div class="col-12 col-md-6 col-lg-2 offset-lg-1">
+                <h4 class="text-secondary fs-5">Пользователю</h4>
+                <a class="text-dark text-decoration-none d-block mt-2" href="#!">Правила проекта</a>
+                <a class="text-dark text-decoration-none d-block mt-2" href="#!">Личный кабинет</a>
+                <a class="text-dark text-decoration-none d-block mt-2" href="#!">Новости</a>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3 offset-lg-1">
+                <h4 class="text-secondary fs-5">Информация</h4>
+                <a class="text-dark text-decoration-none d-block mt-2" href="#!">Конфиденциальность</a>
+                <a class="text-dark text-decoration-none d-block mt-2" href="#!">Пользовательское соглашение</a>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <h4 class="text-secondary fs-5">Обратная связь</h4>
+                <a class="text-dark text-decoration-none d-block mt-2" href="#!">Написать в поддержку</a>
+                <span class="text-dark d-block mt-2">По поводу рекламы и сотрудничества пишите на <a href="mailto:info@click-story.ru">info@click-story.ru</a></span>
+              </div>
+            </div>
+            
+            <div class="row mt-4 mt-md-5 align-items-center">
+              <div class="col-12 col-md-6 mb-3 mb-md-0">
+                <div class="d-flex flex-column flex-md-row gap-3 ">
+                  <span class="text-secondary">© 2023 Click Story<br>Все права защищены</span>
+                  <span class="offset-lg-3">Дизайн<br><a href="#!" class="text-decoration-none">Таня Хайден</a></span>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="d-flex justify-content-start justify-content-md-end gap-2">
+                  <img src="images/icons/MIR-logo.svg" alt="MIR">
+                  <img src="images/icons/VISA-logo.svg" alt="VISA">
+                  <img src="images/icons/MASTERCARD-logo.svg" alt="Mastercard">
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-12 col-md-6">
-            <div class="d-flex justify-content-start justify-content-md-end gap-2">
-              <img src="images/icons/MIR-logo.svg" alt="MIR">
-              <img src="images/icons/VISA-logo.svg" alt="VISA">
-              <img src="images/icons/MASTERCARD-logo.svg" alt="Mastercard">
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+        </footer>
 
     <!-- Card Modal -->
     <div class="modal fade" id="cardModal" tabindex="-1" aria-labelledby="cardModalLabel" aria-hidden="true">
